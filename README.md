@@ -69,7 +69,7 @@ docker run -d \
 
 - --name flaskapp: Names the container flaskapp.
 
-- --network=twotier: Connects container to the twotier network.
+- --network=flasktier: Connects container to the twotier network.
 
 - Environment variables connect Flask to MySQL:
 
@@ -98,7 +98,7 @@ docker build -t flaskapp .
 ```bash
   docker stop flaskapp mysql
   docker rm flaskapp mysql
-  docker network rm twotier
+  docker network rm flasktier
 
 ```
 
