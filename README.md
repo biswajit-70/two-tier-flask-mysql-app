@@ -45,7 +45,7 @@ docker run -d \
 
 - -v mysql-data:/var/lib/mysql: Persists database data.
 
-- --network=twotier: Connects container to twotier network.
+- --network=flasktier: Connects container to twotier network.
 
 - -e MYSQL_DATABASE=mydb: Creates a database named mydb.
 
